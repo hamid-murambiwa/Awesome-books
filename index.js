@@ -1,11 +1,11 @@
-const list = document.getElementById("books");
+const list = document.getElementById("add-book");
 const form = document.getElementById("book-entry");
 
-const ADD_BOOK = "ADD_BOOK";
-const REMOVE_BOOK = "REMOVE_BOOK";
-const LOAD_SAVED_DATA = "LOAD_SAVED_DATA";
+const add_book = "add_book";
+const remove_book = "remove_book";
+const load_data = "load_data";
 
-function generateId() {
+function createId() {
   return Math.floor((1 + Math.random()) * 0x10000)
     .toString(16)
     .substring(1);
@@ -14,22 +14,22 @@ function generateId() {
 
 function createStore() {
   let state = [];
-  const thingsToUpdate = [];
+  const contentUpdate = [];
 
   const update = (action) => {
-    if (action.type === ADD_BOOK) {
+    if (action.type === add_book) {
       state = state.concat([action.book]);
-    } else if (action.type === REMOVE_BOOK) {
+    } else if (action.type === remove_book) {
       state = state.filter((book) => book.id !== action.id);
-    } else if (action.type === LOAD_SAVED_DATA) {
+    } else if (action.type === load_data) {
       state = action.data;
     }
-    thingsToUpdate.forEach((fn) => fn());
+    contentUpdate.forEach((fn) => fn());
   };
 
   const getState = () => state;
 
-  const onUpdate = (fn) => thingsToUpdate.push(fn);
+  const onUpdate = (fn) => contentUpdate.push(fn);
 
   return {
     update,
@@ -42,21 +42,21 @@ const store = createStore();
 
 function addBook(book) {
   store.update({
-    type: ADD_BOOK,
+    type: add_book,
     book,
   });
 }
 
 function removeBook(id) {
   store.update({
-    type: REMOVE_BOOK,
+    type: remove_book,
     id,
   });
 }
 
 function loadSavedData(data) {
   store.update({
-    type: LOAD_SAVED_DATA,
+    type: load_data,
     data,
   });
 }
@@ -65,12 +65,12 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const title = form.elements[0].value;
   const author = form.elements[1].value;
-  const id = generateId();
+  const id = createId();
 
   addBook({ title, author, id });
 });
 
-function addBookToDOM(book) {
+function displayBooks(book) {
   const node = document.createElement("li");
   const title = document.createElement("h2");
   title.innerText = book.title;
@@ -80,11 +80,15 @@ function addBookToDOM(book) {
 
   const button = document.createElement("button");
   button.innerText = "Remove";
+
+  const hr = document.createElement('hr');
+
   button.addEventListener("click", () => removeBook(book.id));
 
   node.appendChild(title);
   node.appendChild(subtitle);
   node.appendChild(button);
+  node.appendChild(hr);
 
   list.appendChild(node);
 }
@@ -92,7 +96,7 @@ function addBookToDOM(book) {
 store.onUpdate(() => {
   list.innerHTML = "";
   const books = store.getState();
-  books.forEach(addBookToDOM);
+  books.forEach(displayBooks);
 });
 
 store.onUpdate(() => {
