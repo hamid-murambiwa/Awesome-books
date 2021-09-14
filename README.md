@@ -20,7 +20,10 @@
 *Twitter: [@Hamid](https://twitter.com/Hamid87789454)
 *LinkedIn: [@hamid murambiwa](https://www.linkedin.com/in/hamid-murambiwa-8a9a9520a/)
 
-<h3>👤 @Willy Ntazama</h3>
+**Willy Ntazama**
+
+- GitHub: [@ntzwilly](https://github.com/ntzwilly)
+- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a
 
 <h2>🤝 Contributing</h2>
 **Contributions, issues, and feature requests are welcome!**
