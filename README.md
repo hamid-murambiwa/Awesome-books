@@ -21,6 +21,7 @@
 - LinkedIn: [@hamid murambiwa](https://www.linkedin.com/in/hamid-murambiwa-8a9a9520a/)
 
 <h3>👤 Willy Ntazama</h3>
+
 - GitHub: [@ntzwilly](https://github.com/ntzwilly)
 - LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a
 
