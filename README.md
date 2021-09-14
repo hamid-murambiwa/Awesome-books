@@ -22,7 +22,6 @@
 
 <h3>👤 @Willy Ntazama</h3>
 
-
 <h2>🤝 Contributing</h2>
 **Contributions, issues, and feature requests are welcome!**
 

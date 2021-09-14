@@ -21,7 +21,7 @@ function createStore(books = []) {
     } else if (action.type === removeBooks) {
       state = state.filter((book) => book.id !== action.id);
     } else if (action.type === loadData) {
-      state = action.data;
+      state = action.books;
     }
     contentUpdate.forEach((fn) => fn());
   };
@@ -36,6 +36,7 @@ function createStore(books = []) {
     onUpdate,
   };
 }
+
 class BookStore {
   constructor() {
     const store = createStore();
@@ -66,22 +67,17 @@ class BookStore {
   onUpdate(func) {
     this.store.onUpdate(func);
   }
-}
 
-function loadBooks() {
-  const saved = localStorage.getItem('saved-data');
-  if (saved && saved !== 'undefined') {
-    this.store.update({
-      type: loadData,
-      books: JSON.parse(saved),
-    });
+  loadBooks() {
+    const saved = localStorage.getItem('saved-data');
+    if (saved) {
+      this.store.update({
+        type: loadData,
+        books: JSON.parse(saved),
+      });
+    }
   }
 }
-
-// const saved = localStorage.getItem('saved-data');
-// console.log(saved)
-// const parsed = JSON.parse(saved);
-// console.log(parsed)
 
 const bookStore = new BookStore();
 
@@ -122,4 +118,6 @@ bookStore.onUpdate(() => {
   bookStore.books.forEach(addBookToDOM);
 });
 
-window.addEventListener('load', () => bookStore.loadBooks());
+window.addEventListener('load', () => {
+  bookStore.loadBooks();
+});
