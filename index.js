@@ -65,7 +65,7 @@ form.addEventListener('submit', (event) => {
   const title = form.elements[0].value;
   const author = form.elements[1].value;
   const id = createId();
-
+  form.reset();
   addBook({ title, author, id });
 });
 
