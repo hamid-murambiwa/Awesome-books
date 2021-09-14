@@ -11,8 +11,8 @@ function createId() {
     .substring(1);
 }
 
-function createStore() {
-  let state = [];
+function createStore(books = []) {
+  let state = books;
   const contentUpdate = [];
 
   const update = (action) => {
@@ -21,7 +21,7 @@ function createStore() {
     } else if (action.type === removeBooks) {
       state = state.filter((book) => book.id !== action.id);
     } else if (action.type === loadData) {
-      state = action.data;
+      state = action.books;
     }
     contentUpdate.forEach((fn) => fn());
   };
@@ -37,36 +37,57 @@ function createStore() {
   };
 }
 
-const store = createStore();
+class BookStore {
+  constructor() {
+    const store = createStore();
+    store.onUpdate(() => {
+      localStorage.setItem('saved-data', JSON.stringify(store.getState()));
+    });
+    this.store = store;
+  }
 
-function addBook(book) {
-  store.update({
-    type: addBooks,
-    book,
-  });
+  get books() {
+    return this.store.getState();
+  }
+
+  addBook(book) {
+    this.store.update({
+      type: addBooks,
+      book,
+    });
+  }
+
+  removeBook(id) {
+    this.store.update({
+      type: removeBooks,
+      id,
+    });
+  }
+
+  onUpdate(func) {
+    this.store.onUpdate(func);
+  }
+
+  loadBooks() {
+    const saved = localStorage.getItem('saved-data');
+    if (saved) {
+      this.store.update({
+        type: loadData,
+        books: JSON.parse(saved),
+      });
+    }
+  }
 }
 
-function removeBook(id) {
-  store.update({
-    type: removeBooks,
-    id,
-  });
-}
-
-function loadSavedData(data) {
-  store.update({
-    type: loadData,
-    data,
-  });
-}
+const bookStore = new BookStore();
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const title = form.elements[0].value;
   const author = form.elements[1].value;
   const id = createId();
-
-  addBook({ title, author, id });
+  form.reset();
+  bookStore.addBook({ title, author, id });
 });
 
 function addBookToDOM(book) {
@@ -82,7 +103,7 @@ function addBookToDOM(book) {
 
   const hr = document.createElement('hr');
 
-  button.addEventListener('click', () => removeBook(book.id));
+  button.addEventListener('click', () => bookStore.removeBook(book.id));
 
   node.appendChild(title);
   node.appendChild(subtitle);
@@ -92,20 +113,11 @@ function addBookToDOM(book) {
   list.appendChild(node);
 }
 
-store.onUpdate(() => {
+bookStore.onUpdate(() => {
   list.innerHTML = '';
-  const books = store.getState();
-  books.forEach(addBookToDOM);
-});
-
-store.onUpdate(() => {
-  localStorage.setItem('saved-data', JSON.stringify(store.getState()));
+  bookStore.books.forEach(addBookToDOM);
 });
 
 window.addEventListener('load', () => {
-  const saved = localStorage.getItem('saved-data');
-  if (saved) {
-    const json = JSON.parse(saved);
-    loadSavedData(json);
-  }
+  bookStore.loadBooks();
 });
