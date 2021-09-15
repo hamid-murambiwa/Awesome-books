@@ -1,7 +1,7 @@
 <h1>Awesome books</h1>
    *a basic website that allows users to add/remove books from a list*
 
-![an image of the portfolio mobile page  webpage](https://github.com/hamid-murambiwa/awesomebooks-img/blob/main/Screenshot%202021-09-13%20at%2016.04.28.png)
+![screenshot](https://user-images.githubusercontent.com/9049260/133396225-8d856374-8ec8-4488-b31f-b2a5c57742d2.png)
 ## Live Demo
 
 [Live Demo Link](https://hamid-murambiwa.github.io/Awesome-books/)
