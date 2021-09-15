@@ -9,8 +9,8 @@
 **2 sections of the portfolio mobile version skeleton**
 
 <h2>Built With</h2>
-*HTML 
-*CSS3
+- HTML 
+- CSS3
 
 <h2>Authors</h2>
 
@@ -23,7 +23,7 @@
 <h3>👤 Willy Ntazama</h3>
 
 - GitHub: [@ntzwilly](https://github.com/ntzwilly)
-- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a
+- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a)
 
 <h2>🤝 Contributing</h2>
 **Contributions, issues, and feature requests are welcome!**
