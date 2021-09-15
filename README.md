@@ -1,7 +1,7 @@
 <h1>Awesome books</h1>
    *a basic website that allows users to add/remove books from a list*
 
-![an image of the portfolio mobile page  webpage](https://github.com/hamid-murambiwa/awesomebooks-img/blob/main/Screenshot%202021-09-13%20at%2016.04.28.png)
+![screenshot](https://user-images.githubusercontent.com/9049260/133396225-8d856374-8ec8-4488-b31f-b2a5c57742d2.png)
 ## Live Demo
 
 [Live Demo Link](https://hamid-murambiwa.github.io/Awesome-books/)
@@ -9,8 +9,11 @@
 **2 sections of the portfolio mobile version skeleton**
 
 <h2>Built With</h2>
-*HTML 
-*CSS3
+
+- HTML 
+- CSS3
+- JavaScript
+
 
 <h2>Authors</h2>
 
@@ -23,7 +26,7 @@
 <h3>👤 Willy Ntazama</h3>
 
 - GitHub: [@ntzwilly](https://github.com/ntzwilly)
-- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a
+- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a)
 
 <h2>🤝 Contributing</h2>
 **Contributions, issues, and feature requests are welcome!**
