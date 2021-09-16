@@ -118,10 +118,8 @@ bookStore.onUpdate(() => {
 });
 
 window.addEventListener('load', () => {
-  const today = new Date();
-  const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
-  const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
-  const dateTime = `${date} ${time}`;
-  document.getElementById('currentDateTime').innerText = dateTime;
+  const { DateTime } = luxon;
+  const now = DateTime.now();
+  document.getElementById('currentDateTime').innerText = now.toLocaleString(DateTime.DATETIME_MED);
   bookStore.loadBooks();
 });
