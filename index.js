@@ -118,11 +118,10 @@ bookStore.onUpdate(() => {
 });
 
 window.addEventListener('load', () => {
+  const today = new Date();
+  const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+  const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+  const dateTime = `${date} ${time}`;
+  document.getElementById('currentDateTime').innerText = dateTime;
   bookStore.loadBooks();
 });
-
-const today = new Date();
-const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
-const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
-const dateTime = `${date} ${time}`;
-document.getElementById('currentDateTime').innerText = dateTime;
