@@ -8,15 +8,74 @@
   <title>Awesome Books</title>
 </head>
 <body>
-  <h1>Awesome Books</h1>
+  <header>
+    <h1>Awesome Books</h1>
+    <nav>
+      <li>
+        <a href="#add-book">
+          List
+        </a>
+      </li>
+
+      <li>
+        <a href="#book-entry">
+          Add new
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact">
+          Contact
+        </a>
+        
+      </li>
+    </nav>
+  </header>
+  
+  <div class="time">
+    <p id="currentDateTime"></p>
+  </div>
+
   <ul id="add-book"></ul>
-  <hr>
-  <h1>Add a book</h1>
+
   <form id="book-entry">
+    <div id="title">
+      <hr>
+      <h1>Add a book</h1>
+    </div>
     <input type="text" placeholder="Title" required />
     <input type="text" placeholder="Author" required />
     <button type="submit">Add</button>
-  </form>  
+  </form> 
+
+  <section id="contact">
+    <h1>
+      Contact information
+    </h1>
+
+  <p>
+    Reach out to us if you have any questions or just want to say 'Hi'.
+  </p>
+
+  <ul>
+    <li>
+Our email: machipisajunior@gmail.com
+    </li>
+
+    <li>
+      Our phone number: +27659187764
+    </li>
+
+    <li>
+      Our address: 12 pretoria road, kempton park, South Africa.
+    </li>
+  </ul>
+  </section>
+
+  <footer>
+    <h3>Copyright</h3>
+  </footer>
+
   <script src="index.js"></script>
 </body>
 </html>
