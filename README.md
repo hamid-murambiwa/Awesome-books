@@ -1,7 +1,9 @@
 <h1>Awesome books</h1>
    *a basic website that allows users to add/remove books from a list*
 
+
 ![screenshot](https://user-images.githubusercontent.com/9049260/133600920-7d09cc35-cc77-427f-b8e6-cb2cdcb7f211.png)
+
 ## Live Demo
 
 [Live Demo Link](https://hamid-murambiwa.github.io/Awesome-books/)
@@ -25,7 +27,7 @@
 <h3>👤 Willy Ntazama</h3>
 
 - GitHub: [@ntzwilly](https://github.com/ntzwilly)
-- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a
+- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a)
 
 <h2>🤝 Contributing</h2>
 **Contributions, issues, and feature requests are welcome!**
