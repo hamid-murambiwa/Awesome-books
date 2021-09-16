@@ -1,7 +1,9 @@
 <h1>Awesome books</h1>
    *a basic website that allows users to add/remove books from a list*
 
-![screenshot](https://user-images.githubusercontent.com/9049260/133396225-8d856374-8ec8-4488-b31f-b2a5c57742d2.png)
+
+![screenshot](https://user-images.githubusercontent.com/9049260/133600920-7d09cc35-cc77-427f-b8e6-cb2cdcb7f211.png)
+
 ## Live Demo
 
 [Live Demo Link](https://hamid-murambiwa.github.io/Awesome-books/)
@@ -13,7 +15,6 @@
 - HTML 
 - CSS3
 - JavaScript
-
 
 <h2>Authors</h2>
 
