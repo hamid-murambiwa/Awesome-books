@@ -1,7 +1,7 @@
 <h1>Awesome books</h1>
    *a basic website that allows users to add/remove books from a list*
 
-![an image of the portfolio mobile page  webpage](https://github.com/hamid-murambiwa/awesomebooks-img/blob/main/Screenshot%202021-09-13%20at%2016.04.28.png)
+![screenshot](https://user-images.githubusercontent.com/9049260/133600920-7d09cc35-cc77-427f-b8e6-cb2cdcb7f211.png)
 ## Live Demo
 
 [Live Demo Link](https://hamid-murambiwa.github.io/Awesome-books/)
@@ -9,8 +9,10 @@
 **2 sections of the portfolio mobile version skeleton**
 
 <h2>Built With</h2>
-*HTML 
-*CSS3
+
+- HTML 
+- CSS3
+- JavaScript
 
 <h2>Authors</h2>
 
