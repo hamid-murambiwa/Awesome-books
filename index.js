@@ -27,7 +27,6 @@ function createStore(books = []) {
   };
 
   const getState = () => state;
-
   const onUpdate = (fn) => contentUpdate.push(fn);
 
   return {
