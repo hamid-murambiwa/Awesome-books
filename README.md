@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://hamid-murambiwa.github.io/Awesome-books/)
+[Live Demo Link](https://622d8d83e5d1f001a05aad9d--musing-johnson-cce8cb.netlify.app/)
 
 **2 sections of the portfolio mobile version skeleton**
 
@@ -25,7 +25,7 @@
 - LinkedIn: [LinkedIn](https://linkedin.com/in/hamid-murambiwa/)
 
 
-👤 Willy **Ntazama**
+👤 **Willy Ntazama**
 
 - GitHub: [@ntzwilly](https://github.com/ntzwilly)
 - LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a)
