@@ -1,5 +1,5 @@
-<h1>Awesome books</h1>
-   *a basic website that allows users to add/remove books from a list*
+# Awesome books
+> A simple website application where the user can add and remove books from a list. Built with Html/CSS and JavaScript.
 
 
 ![screenshot](https://user-images.githubusercontent.com/9049260/133600920-7d09cc35-cc77-427f-b8e6-cb2cdcb7f211.png)
@@ -10,36 +10,39 @@
 
 **2 sections of the portfolio mobile version skeleton**
 
-<h2>Built With</h2>
+## Built With
 
 - HTML 
 - CSS3
 - JavaScript
 
-<h2>Authors</h2>
+## Authors
 
-<h3>👤 Hamid</h3>
+👤 **Hamid Murambiwa**
 
-- GitHub: [@hamid-murambiwa](https://github.com/hamid-murambiwa)
-- Twitter: [@Hamid](https://twitter.com/Hamid87789454)
-- LinkedIn: [@hamid murambiwa](https://www.linkedin.com/in/hamid-murambiwa-8a9a9520a/)
+- GitHub: [@hamid-murambiwa](https://github.com/hamid-murambiwa/)
+- Twitter: [@Hamid87789454](https://twitter.com/Hamid87789454/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/hamid-murambiwa/)
 
-<h3>👤 Willy Ntazama</h3>
+
+👤 Willy **Ntazama**
 
 - GitHub: [@ntzwilly](https://github.com/ntzwilly)
 - LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7a)
 
-<h2>🤝 Contributing</h2>
-**Contributions, issues, and feature requests are welcome!**
+## 🤝 Contributing
 
-**Feel free to check the issues page [issues page](https://github.com/hamid-murambiwa/Hello-Microverse/issues).**
+>Contributions, issues, and feature requests are welcome!
+>Feel free to check the [issues page](../../issues/).
 
-<h2>Show your support</h2>
-**Give a ⭐️ if you like this project!**
+## Show your support
 
-<h2>Acknowledgments</h2>
- - Microverse
- - Microverse Learning Partners  
+>Give a ⭐️ if you like this project!
 
-<h2>📝 License</h2>
-This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
+## Acknowledgments
+
+- This project built in Microverse's Fourth Module's Capstone.
+
+## 📝 License
+
+>This project is [MIT](./MIT.md) licensed.
